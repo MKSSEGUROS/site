@@ -518,7 +518,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-4da4e90 elementor-widget elementor-widget-heading" data-id="4da4e90" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">Preencha o Formulário</h3>		</div>
+					<h3 class="elementor-heading-title elementor-size-default">Preencha o Formulário</h3>		</div>
 				</div>
 				<div class="elementor-element elementor-element-fcf842d elementor-button-align-end elementor-mobile-button-align-stretch elementor-widget elementor-widget-global elementor-global-217 elementor-widget-form" data-id="fcf842d" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
 				<div class="elementor-widget-container">
@@ -528,53 +528,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<input type="hidden" name="form_id" value="fcf842d"/>
 			<input type="hidden" name="referer_title" value="" />
 
-							<input type="hidden" name="queried_id" value="494"/>
 			
-			<div class="elementor-form-fields-wrapper elementor-labels-">
-								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
-												<label for="form-field-name" class="elementor-field-label elementor-screen-only">
-								Nome Completo							</label>
-														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nome Completo" required="required" aria-required="true">
-											</div>
-								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_eb4e9d0 elementor-col-100 elementor-field-required">
-												<label for="form-field-field_eb4e9d0" class="elementor-field-label elementor-screen-only">
-								Telefone com DDD							</label>
-														<input size="1" type="text" name="form_fields[field_eb4e9d0]" id="form-field-field_eb4e9d0" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Telefone com DDD" required="required" aria-required="true">
-											</div>
-								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
-												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
-								Seu melhor e-mail							</label>
-														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Seu melhor e-mail" required="required" aria-required="true">
-											</div>
-								<div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_2d98c5d elementor-col-100 elementor-field-required">
-												<label for="form-field-field_2d98c5d" class="elementor-field-label elementor-screen-only">
-								Selecione o produto							</label>
-								<div class="elementor-field elementor-select-wrapper remove-before ">
-			<div class="select-caret-down-wrapper">
-				<i aria-hidden="true" class="eicon-caret-down"></i>			</div>
-			<select name="form_fields[field_2d98c5d]" id="form-field-field_2d98c5d" class="elementor-field-textual elementor-size-sm" required="required" aria-required="true">
-									<option value="Selecione o produto">Selecione o produto</option>
-									<option value="Seguros Compreensivos">Seguros Compreensivos</option>
-									<option value="Seguros Riscos de Engenharia">Seguros Riscos de Engenharia</option>
-									<option value="Seguros Riscos Diversos">Seguros Riscos Diversos</option>
-									<option value="Seguro Transporte">Seguro Transporte</option>
-									<option value="Seguro Responsabilidade Civil">Seguro Responsabilidade Civil</option>
-									<option value="Seguro Automóvel">Seguro Automóvel</option>
-									<option value="Seguro de Vida">Seguro de Vida</option>
-							</select>
-		</div>
-						</div>
-								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
-												<label for="form-field-message" class="elementor-field-label elementor-screen-only">
-								Mensagem							</label>
-						<textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem"></textarea>				</div>
-								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-					<button type="submit" class="elementor-button elementor-size-sm">
-						<span >
-															<span class=" elementor-button-icon">
-																										</span>
-																						<span class="elementor-button-text">Enviar mensagem</span>
-													</span>
+			
+			
+			<form id="myForm">
+    <input type="hidden" name="queried_id" value="494"/>
+
+    <div class="elementor-form-fields-wrapper elementor-labels-">
+        <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
+            <label for="form-field-name" class="elementor-field-label elementor-screen-only">Nome Completo</label>
+            <input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Nome Completo" required="required" aria-required="true">
+        </div>
+
+        <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_eb4e9d0 elementor-col-100 elementor-field-required">
+            <label for="form-field-field_eb4e9d0" class="elementor-field-label elementor-screen-only">Telefone com DDD</label>
+            <input size="1" type="text" name="form_fields[field_eb4e9d0]" id="form-field-field_eb4e9d0" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Telefone com DDD" required="required" aria-required="true">
+        </div>
+
+        <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+            <label for="form-field-email" class="elementor-field-label elementor-screen-only">Seu melhor e-mail</label>
+            <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Seu melhor e-mail" required="required" aria-required="true">
+        </div>
+
+        <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_2d98c5d elementor-col-100 elementor-field-required">
+            <label for="form-field-field_2d98c5d" class="elementor-field-label elementor-screen-only">Selecione o produto</label>
+            <div class="elementor-field elementor-select-wrapper remove-before">
+                <div class="select-caret-down-wrapper">
+                    <i aria-hidden="true" class="eicon-caret-down"></i>
+                </div>
+                <select name="form_fields[field_2d98c5d]" id="form-field-field_2d98c5d" class="elementor-field-textual elementor-size-sm" required="required" aria-required="true">
+                    <option value="Selecione o produto">Selecione o produto</option>
+                    <option value="Seguros Compreensivos">Seguros Compreensivos</option>
+                    <option value="Seguros Riscos de Engenharia">Seguros Riscos de Engenharia</option>
+                    <option value="Seguros Riscos Diversos">Seguros Riscos Diversos</option>
+                    <option value="Seguro Transporte">Seguro Transporte</option>
+                    <option value="Seguro Responsabilidade Civil">Seguro Responsabilidade Civil</option>
+                    <option value="Seguro Automóvel">Seguro Automóvel</option>
+                    <option value="Seguro de Vida">Seguro de Vida</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+            <label for="form-field-message" class="elementor-field-label elementor-screen-only">Mensagem</label>
+            <textarea class="elementor-field-textual elementor-field elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem"></textarea>
+        </div>
+
+        <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+            <button type="button" onclick="enviarParaWhatsApp()">Enviar mensagem</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    function enviarParaWhatsApp() {
+        var name = document.getElementById("form-field-name").value;
+        var phone = document.getElementById("form-field-field_eb4e9d0").value;
+        var email = document.getElementById("form-field-email").value;
+        var product = document.getElementById("form-field-field_2d98c5d").value;
+        var message = document.getElementById("form-field-message").value;
+
+        var whatsappMessage = `
+            Olá! 😊
+            Nome: ${name}
+            Telefone: ${phone}
+            E-mail: ${email}
+            Produto Selecionado: ${product}
+            Mensagem: ${message}
+            
+            Estou interessado(a) em obter mais informações sobre o seguro. Pode me ajudar?
+            
+            Obrigado!
+        `;
+
+        var encodedMessage = encodeURIComponent(whatsappMessage);
+        window.location.href = "https://api.whatsapp.com/send?phone=5511986459897&text=" + encodedMessage;
+    }
+</script>
 					</button>
 				</div>
 			</div>
